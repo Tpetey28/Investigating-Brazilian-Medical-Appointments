@@ -1,12 +1,29 @@
 # Investigating-Brazilian-Medical-Appointments
 
-Project: Investigating Brazilian Medical Appointments
-Introduction
+# Project: Investigating Brazilian Medical Appointments
+## Introduction
+
 In this report, I am investigating a dataset that includes information about ~100k medical appointments in Brazil. I will be looking to answer several important questions in this analysis.
-The first: Which characteristics make a person more likely to miss their appointment?
+
+## The first: Which characteristics make a person more likely to miss their appointment?
 This is an important question for the healthcare organization to understand to improve their efforts when comparing forecasted demand to actual demand. Ensuring that the organization is staffed appropriately is key in the business of healthcare as not having enough caregivers could be catastrophic to the care levels it can provide for it's patients. Whereas the salaries for healthcare professionals are expensive, and having too many caregivers could be very detrimental to the business in a financial aspect. Staffing as accurately as possible will be very important to maintaining the right level of care for patients while not overspending on caregiver compensation.
-The second: Is our SMS reminder system effective and if so, is there a particular demographic of person that it is and is not effective for?
+
+## The second: Is our SMS reminder system effective and if so, is there a particular demographic of person that it is and is not effective for?
 It is also important for the business to understand the impact of the sms reminder system. If it is not effective, the organization should explore ways to improve the reminder, or simply remove the sms reminder system and trim the costs associated with providing and supporting the process. It may be that the sms system is only impactful for certain age groups. Knowing this could help the organization limit their costs by only providing the service for select demographics.
 
+## Conclusions
+In this report, we analyzed 110,527 data samples from hospital visits in Brazil. The samples were gathered from 40 days of appointments between 4/29 and 6/8 of 2016. Our goal for this report was to look for information to help us answer the following questions.
 
+## Research Question 1: Which characteristics make a person more likely to miss their appointment?
+To help us answer this question, we selected several of the most interesting characteristics of each sample to analyze looking for potential correlations. We analyzed Gender, Age, Welfare Status, Alcoholism Status, Handicap Status, and Appointment Date in search for interesting observations. Although we did uncover some pretty interesting facts, this report does not leverage the statistical analysis needed to determine causation for correlation between any of these factors. Additional statistal analysis will need to be undertaken in order to investigate the observations noted in this report. However, those statiscal analysis' are out of scope for this project.
+In regards to Gender, we did not uncover any interesting observations. Our analysis shows that men and women missed their appointments at the same rate.
+When looking into Age, we were able to see that people under 50 missed appointments more often than those over 50. It would be important to conduct further statistical analysis to explore the link between age and missing appointments.
+For Welfare Status, we found that more often, people on Welfare missed appointments than those who were not on Welfare. It would certainly benefit us to conduct further statistical analysis here in order to determine if there is indeed correlation.
+After exploring the data for Alcoholics, it appears from our analysis that alcoholics and non-alcoholics missed appointments at the same rate. Based on this, we may not need to explore for any causation using statistical analysis.
+In looking at Handicap Status, we found that people with handicap status 4 missed appointments more often than those with any other handicap. We observed that those without handicap and those with handicaps 1, 2, and 3 missed appointments at approximately the same rate. It would be interesting to explore the causation/correlation between handicap status 4 and missing appointments using statistical analysis.
+Finally, when analyzing the data split up into 10 day periods, it appears to us from the data that the number of appointments missed closely follows the number of total appointments during each period. We also observed that the number of appointments missed in each of the 10 day blocks stayed between 4 - 6 thousand, even though in some periods, the variation in the number of total appointments was much higher. It would be important to explore this further using statistical analysis before determining if the date has any correlation to people missing appointments.
+## Research Question 2 : Is our SMS reminder system effective and if so, is there a particular demographic of person that it is and is not effective for?
+To help us answer this question, we took the total number of people received the SMS reminder and compared it to the total number of people who did not receive the reminder. Our analysis shows that the people who received the reminder missed their appointments more often than those who did not receive the reminder. This begs the question, what kind of reminder process is being used for people who do not receive the sms? Do they receive and email? A phone call? This would be an important thing for us to understand.
+To take the analyis one step further, we split the data up by age group to see if the sms reminder was more or less effective for certain demographics. We found that the people who received sms messages over the age of 50 missed less appointments than those who received the sms reminder under the age of 50. However, in all age groups, the people receiving the sms reminder missed their appointments more often than those who did not receive the reminder.
+To conclude on this second question, more analysis needs to be undertaken to explore correlation between age, sms received rate, and no show rate. It would also be important to find out what other means of reminders we are using other than the sms process.
 
